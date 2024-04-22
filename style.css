@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    min-height: 100vh;
+    background-color: ghostwhite;
+}
+
+.menu-navegacao{
+    height: 65px;
+    background-color: #38393C;
+}
+
+.menu-navegacao>ul{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.menu-navegacao a{
+    color: ghostwhite;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    align-items: center;
+    display: inline-flex;
+    height: 100%;
+}
+
+.menu-navegacao a:hover{
+    cursor: pointer;
+    background-color: ghostwhite;
+    color: #38393c;
+    transition-duration: 500ms;
+}   
+
+.breadcrumbs{
+    height: 50px;
+}
+
+.breadcrumbs>ul{
+    height: 100%;
+    display: flex;
+    margin-inline-start: 1.5rem;
+}
+
+.breadcrumbs li{
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+.breadcrumbs a{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0 1rem;
+}
+
+.breadcrumbs a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.breadcrumbs li:not(:last-child)::after{
+    content: ">";
+}
+
+.breadcrumbs li:last-child>a{
+    background-color:#38393c;
+    color: ghostwhite;
+    padding:8px;
+    border-radius: 16px;
+    margin-inline-start: 8px;
+}
+
+.breadcrumbs li:last-child>a:hover{
+    text-decoration: none;
+    cursor: default;
+}
+
